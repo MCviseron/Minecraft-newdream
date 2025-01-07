@@ -1,0 +1,15 @@
+# execute as @a at @s run tag @s remove null
+# execute as @a at @s run tag @s remove D
+# execute as @a at @s run tag @s remove C-
+# execute as @a at @s run tag @s remove C
+# execute as @a at @s run tag @s remove C+
+# execute as @a at @s run tag @s remove B-
+# execute as @a at @s run tag @s remove B
+# execute as @a at @s run tag @s remove B+
+# execute as @a at @s run tag @s remove A-
+# execute as @a at @s run tag @s remove A
+# execute as @a at @s run tag @s remove A+
+# execute as @a at @s run tag @s remove S-
+# execute as @a at @s run tag @s remove S
+# execute as @a at @s run tag @s remove S+
+# execute as @a at @s run tag @s remove SP+

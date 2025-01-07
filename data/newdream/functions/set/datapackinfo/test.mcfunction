@@ -1,0 +1,1 @@
+execute if score datapackinfo datapackinfo matches 1.. run function newdream:set/datapackinfo/info

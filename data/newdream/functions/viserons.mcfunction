@@ -1,0 +1,3 @@
+#main-info -> v0.2b
+execute as @a[tag=op] at @s run title @s title [{"text": "v0.2b","color": "aqua","underlined": true,"bold": true}]
+execute as @a[tag=op] at @s run title @s subtitle [{"text": "sid","color": "red"},{"text": " : ","color": "red","bold": true},{"text": "527743324","bold": true,"color": "green","underlined": true},{"text": " ksid","color": "red"},{"text": " : ","color": "red","bold": true},{"text": "s88y7","bold": true,"color": "green","underlined": true}]

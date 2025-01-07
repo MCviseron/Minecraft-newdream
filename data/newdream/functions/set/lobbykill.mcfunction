@@ -1,0 +1,1 @@
+execute as @e[x=-307,y=135,z=-282,dx=32,dy=15,dz=32,type=!player] at @s run summon lightning_bolt ~ ~ ~

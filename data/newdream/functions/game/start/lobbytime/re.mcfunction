@@ -1,0 +1,1 @@
+execute at @e[name=4] run fill ~-2 ~-4 ~ ~2 ~4 ~ minecraft:smooth_quartz

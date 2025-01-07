@@ -1,0 +1,4 @@
+execute if score 已准备: allnum = allplayer allplayer run execute if entity @e[type=armor_stand,name="Dream",tag = isplaying] run function newdream:game/start/startdo1
+execute if score 已准备: allnum = allplayer allplayer run execute if entity @e[type=armor_stand,name="Dream",tag = !isplaying,tag = !willplay] run function newdream:game/start/startdo2
+execute if score 已准备: allnum < allplayer allplayer run execute if entity @e[type=armor_stand,name="Dream",tag = willplay] run function newdream:game/start/startdo3
+execute if score 已准备: allnum = allplayer allplayer run execute if score Dream: allnum matches 2.. run function newdream:game/start/startdo4

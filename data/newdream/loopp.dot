@@ -1,0 +1,34 @@
+digraph G {
+    A -> B;
+    B -> C;
+}
+loop.mcfunction -> newdream:login/login
+loop.mcfunction -> newdream:set/fireworker
+loop.mcfunction -> newdream:set/loop
+loop.mcfunction -> newdream:game/loop (条件)
+loop.mcfunction -> newdream:manage/opdebugger
+loop.mcfunction -> newdream:game/compass
+
+newdream:set/loop -> newdream:set/team/loop
+newdream:set/loop -> newdream:set/module/loop
+newdream:set/loop -> newdream:set/pnum
+newdream:set/loop -> newdream:set/target/score
+newdream:set/loop -> newdream:set/path
+newdream:set/loop -> newdream:set/datapackinfo/test
+newdream:set/loop -> newdream:set/bossbar/loop
+newdream:set/loop -> newdream:set/data/loop
+newdream:set/loop -> newdream:set/cannotdrop
+
+newdream:game/loop -> newdream:game/dnum
+newdream:game/loop -> newdream:game/lpun
+newdream:game/loop -> newdream:game/readynum
+newdream:game/loop -> newdream:game/newplayer/loop
+newdream:game/loop -> newdream:game/main
+newdream:game/loop -> newdream:game/usecarroat
+newdream:game/loop -> newdream:game/start/start (条件)
+newdream:game/loop -> newdream:game/allplayer
+newdream:game/loop -> newdream:game/start/startime
+newdream:game/loop -> newdream:game/end/loop
+newdream:game/loop -> newdream:game/target/loop
+newdream:game/loop -> newdream:game/duanwei/loop
+newdream:game/loop -> newdream:game/compass/loop

@@ -1,0 +1,5 @@
+execute store result storage newdream:pos dream.x int 1 run data get entity @a[team=green,limit=1] Pos[0]
+execute store result storage newdream:pos dream.y int 1 run data get entity @a[team=green,limit=1] Pos[1]
+execute store result storage newdream:pos dream.z int 1 run data get entity @a[team=green,limit=1] Pos[2]
+data modify storage newdream:pos dream.dimension set from entity @a[team=green,limit=1] Dimension
+execute as @a[team=red,nbt={SelectedItem:{id:"minecraft:compass"}}] at @s run title @s actionbar [{"text":"维度: ","color":"gray"},{"nbt": "dream.dimension","storage": "newdream:pos","color": "yellow"},{"text":" [","color": "gray"},{"nbt": "dream.x","storage": "newdream:pos","color": "red"},{"text":" , ","color":"red"},{"nbt": "dream.y","storage": "newdream:pos","color": "red"},{"text":" , ","color":"red"},{"nbt": "dream.z","storage": "newdream:pos","color": "red"},{"text":"] ","color": "gray"}]

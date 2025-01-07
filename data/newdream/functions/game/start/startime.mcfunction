@@ -1,0 +1,16 @@
+#计时器
+#next-line info -> 配置开始条件：至少2名玩家，1名Dream，1名猎人 参数：2-1-1-0-1
+execute if entity @e[type=armor_stand,name="Dream",tag=willplay] run execute if score allplayer allplayer matches 2.. run execute if score Dream: allnum matches 1 run execute if score 猎人: allnum matches 1.. run execute if score startimes time matches 0.. run scoreboard players add startimet time 1
+execute if score startimet time matches 21.. run scoreboard players remove startimes time 1
+execute unless entity @e[name="Born place"] run execute if score startimet time matches 15 run title @a title [{"text": "猎人游戏即将开始...","color": "aqua","bold":"true"}]
+execute if entity @e[name="Born place"] run execute if score startimet time matches 15 run title @a title [{"score":{"name": "startimes","objective": "time"},"color": "green","bold":"true"}]
+# execute if score startimet time matches 15 run execute if score startimes time matches 10 run tp @a -287 145 -253 -143 5
+execute if score startimet time matches 15 run function newdream:game/start/lobbystarttime
+execute if score startimet time matches 15 run execute if score startimes time matches 7.. run title @a subtitle [{"score":{"name":"startimes","objective": "time"},"color": "green","bold": true},{"text":"  胜利积分: ","color":"yellow","bold": true},{"text": "+","color": "green","bold": true},{"score": {"name": "add","objective": "readyscore"},"color":"green","bold": true},{"text":"失败积分: ","color":"red","bold": true},{"text": "-","color": "red","bold": true},{"score": {"name": "remove","objective": "readyscore"},"color": "red","bold": true}]
+execute if score startimet time matches 15 run execute if score startimes time matches 4..6 run title @a subtitle [{"score":{"name":"startimes","objective": "time"},"color": "yellow","bold":"true"},{"text":"  胜利积分: ","color":"yellow","bold": true},{"text": "+","color": "green","bold": true},{"score": {"name": "add","objective": "readyscore"},"color":"green","bold": true},{"text":"失败积分: ","color":"red","bold": true},{"text": "-","color": "red","bold": true},{"score": {"name": "remove","objective": "readyscore"},"color": "red","bold": true}]
+execute if score startimet time matches 15 run execute if score startimes time matches 0..3 run title @a subtitle [{"score":{"name":"startimes","objective": "time"},"color": "red","bold":"true"},{"text":"  胜利积分: ","color":"yellow","bold": true},{"text": "+","color": "green","bold": true},{"score": {"name": "add","objective": "readyscore"},"color":"green","bold": true},{"text":"失败积分: ","color":"red","bold": true},{"text": "-","color": "red","bold": true},{"score": {"name": "remove","objective": "readyscore"},"color": "red","bold": true}]
+execute as @a at @s run execute if score startimet time matches 15 run playsound block.lever.click ambient @s ~ ~ ~
+execute if score startimet time matches 21.. run scoreboard players set startimet time 0
+
+execute unless entity @e[name="Born place"] run execute if score startimet time matches 15 run execute if score startimes time matches 0 run function newdream:game/start/gstart
+execute if entity @e[name="Born place"] run execute if score startimet time matches 15 run execute if score startimes time matches 0 run function newdream:game/start/starts

@@ -1,0 +1,4 @@
+execute as @a at @s run execute if score @s use-carroatstick-ready matches 2.. run scoreboard players set @s use-carroatstick-ready 0
+execute if entity @e[type=armor_stand,name="Dream",tag=!isplaying] run execute as @a[team=!pg] at @s run execute if score @s use-carroatstick-ready matches 0 run item replace entity @s container.8 with red_concrete{display:{Name:'[{"text":"未准备","color":"red"}]'}}
+execute if entity @e[type=armor_stand,name="Dream",tag=!isplaying] run execute as @a[team=!pg] at @s run execute if score @s use-carroatstick-ready matches 1 run item replace entity @s container.8 with lime_concrete{display:{Name:'[{"text":"已准备","color":"green"}]'}}
+execute if entity @e[type=armor_stand,name="Dream",tag=!isplaying] run execute as @a[team=pg] at @s run execute if score @s use-carroatstick-ready matches 0 run item replace entity @s container.8 with white_concrete{display:{Name:'[{"text":"你是旁观者","color":"white"}]'}}

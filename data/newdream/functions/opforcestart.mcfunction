@@ -1,0 +1,1 @@
+function newdream:game/start/opforcestart

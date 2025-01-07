@@ -1,0 +1,11 @@
+{
+    "files.encoding": "utf8",
+    "editor.tabSize": 4,
+    "editor.fontFamily": "Monaco,JetBrain Mono"
+    
+    // "editor.rulers": [80],
+    // "editor.formatOnSave": true,
+    // "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // "prettier.printWidth": 80,
+    // "prettier.proseWrap": "always"
+}

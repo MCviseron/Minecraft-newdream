@@ -1,0 +1,1 @@
+execute if entity @e[type=minecraft:armor_stand,name=Dream,limit=1,tag=!isplaying] run execute as @a at @s run data modify entity @e[type=minecraft:item,distance=..2,limit=1] PickupDelay set value 0
