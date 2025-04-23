@@ -11,7 +11,7 @@ execute as @a[scores={login=25}] at @s run scoreboard players set startimes time
 execute as @a[scores={login=25}] at @s run scoreboard players set startimet time 0
 execute as @a[scores={login=25}] at @s run clear @a carrot_on_a_stick
 execute as @a[scores={login=25}] at @s run team join pg
-execute as @a[scores={login=25}] at @s run execute if entity @s[tag=!player] 
+# execute as @a[scores={login=25}] at @s run execute if entity @s[tag=!player] 
 execute as @a[scores={login=25}] at @s run tag @s remove win
 execute as @a[scores={login=25}] at @s run execute if entity @e[name=Dream,tag=!isplaying] run gamemode adventure @s
 execute as @a[scores={login=25}] at @s run execute if entity @e[name=Dream,tag=isplaying] run gamemode spectator
