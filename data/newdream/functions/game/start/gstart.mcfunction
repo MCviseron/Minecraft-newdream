@@ -10,7 +10,7 @@ tp @a[team=pg] @r[team=green]
 gamemode spectator @a[team=pg]
 execute as @a[team=green,limit=1] at @s run worldborder center ~ ~
 worldborder set 5
-execute as @a[team=green,limit=1] at @s run summon armor_stand ~ ~1 ~ {Invisible:1b,CustomName:'[{"text":"Born place","color": "green","bold":"true"}]',CustomNameVisible:1b,NoGravity:1b,Small:1b}
+execute as @a[team=green,limit=1] at @s run summon armor_stand ~ ~1 ~ {Invisible:1b,CustomName:'[{"text":"Born place","color": "green","bold":true}]',CustomNameVisible:1b,NoGravity:1b,Small:1b}
 execute as @e[type=armor_stand,name="Born place",limit=1] at @s run forceload add ~ ~
 tp @a[team=red] @e[type=armor_stand,limit=1,name="Born place"]
 tp @a[team=green] @e[type=armor_stand,limit=1,name="Born place"]
